@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>table</title>
+  <style>
+    table {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: aquamarine;
+      color: brown;
+    }
+
+    caption>strong {
+      color: royalblue;
+      font-size: 4rem;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <article>
+      <table>
+        <caption>
+          <strong> person </strong>
+        </caption>
+        <tr>
+          <th>name</th>
+          <th>age</th>
+        </tr>
+        <tr>
+          <td rowspan="2">han_yong</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td colspan="2">ha_neul</td>
+        </tr>
+      </table>
+    </article>
+  </section>
+</body>
+
+</html>
