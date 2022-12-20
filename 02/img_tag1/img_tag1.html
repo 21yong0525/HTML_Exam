@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>img_tag</title>
+  <style>
+    #mydog {
+      float: right;
+    }
+
+    #mydog2 {
+      width: 50px;
+      height: 50px;
+    }
+
+    #mydog3 {
+      width: 20%;
+      height: 20%;
+    }
+
+    /* float으로 공간이 생겨도 올라가지 않게 설정 */
+    h3.clear {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>image</h3>
+  <img src="../img/strawberry.jpg" alt="mydog_image" title="mydog">
+  <h3>image float: right;</h3>
+  <img id="mydog" src="../img/strawberry.jpg" alt="mydog_image" title="mydog">
+  <h3 class="clear">image 50px</h3>
+  <img id="mydog2" src="../img/strawberry.jpg" alt="mydog_image" title="mydog">
+  <h3 class="clear">image 20%</h3>
+  <img id="mydog3" src="../img/strawberry.jpg" alt="mydog_image" title="mydog">
+</body>
+
+</html>
