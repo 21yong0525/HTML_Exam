@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>embed&object</title>
+  <style>
+    main {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div>
+      <h1>embed_tag</h1>
+      <h3>Image</h3>
+      <embed src="../img/strawberry2.jpg" width="150" height="170">
+      <h3>Flash</h3>
+      <embed src="../video/strawberry.swf">
+      <h3>Web</h3>
+      <embed src="http://www.mrhi.or.kr/" width="500" height="170">
+      <h3>PDF</h3>
+      <embed src="../img/strawberry2.pdf">
+    </div>
+    <div>
+      <h1>object_tag</h1>
+      <h3>Image</h3>
+      <object data="../img/strawberry2.jpg" width="150" height="170"></object>
+      <h3>Flash</h3>
+      <object type="application/x-shockwave-flash" data="../video/strawberry.swf" width="250" height="200"></object>
+      <h3>PDF</h3>
+      <object type="application/pdf" data="../img/strawberry2.pdf"></object>
+    </div>
+  </main>
+</body>
+
+</html>
