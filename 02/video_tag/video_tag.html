@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>video_tag</title>
+</head>
+
+<body>
+  <h3>video play</h3>
+  <video src="../video/strawberry2.mp4" controls></video>
+  <h3>video auto play</h3>
+  <!-- muted를 제거하면 autoplay가 작동을 하지 않는다. -->
+  <!-- <video src="../video/strawberry2.mp4" controls loop autoplay></video> -->
+  <video src="../video/strawberry2.mp4" controls loop autoplay muted></video>
+  <h3>video multi play</h3>
+  <video controls width="160px" height="240px">
+    <source src="../video/strawberry2.ogg" type="video/ogg">
+    <source src="../video/strawberry2.webm" type="video/webm">
+    <source src="../video/strawberry2.mp4" type="video/mp4">
+    unable to play video file.
+  </video>
+  <h3>video multi play to web</h3>
+  <video controls autoplay muted poster="./image/wait.jpg" width="300" height="250" poster="wait.jpg">
+    <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4; codecs="avc1, mp4a"'>
+    <source src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg; codecs="theora, vorbis"'>
+    unable to play video file.
+  </video>
+
+</body>
+
+</html>
