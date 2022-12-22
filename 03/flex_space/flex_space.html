@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flex_space</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 33.3vh;
+    }
+
+    .container1 {
+      justify-content: space-around;
+      background-color: rgb(197, 197, 197);
+    }
+
+    .container2 {
+      justify-content: space-between;
+      background-color: rgb(172, 172, 172);
+    }
+
+    .container3 {
+      justify-content: space-evenly;
+      background-color: rgb(126, 126, 126);
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container container1">
+    <div class="item">a</div>
+    <div class="item">r</div>
+    <div class="item">o</div>
+    <div class="item">u</div>
+    <div class="item">n</div>
+    <div class="item">d</div>
+  </div>
+  <div class="container container2">
+    <div class="item">b</div>
+    <div class="item">e</div>
+    <div class="item">t</div>
+    <div class="item">w</div>
+    <div class="item">e</div>
+    <div class="item">e</div>
+    <div class="item">n</div>
+  </div>
+  <div class="container container3">
+    <div class="item">e</div>
+    <div class="item">v</div>
+    <div class="item">e</div>
+    <div class="item">n</div>
+    <div class="item">l</div>
+    <div class="item">y</div>
+  </div>
+</body>
+
+</html>
