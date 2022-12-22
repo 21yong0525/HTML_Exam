@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>display</title>
+  <style>
+    h3 {
+      margin: 0;
+    }
+
+    .background1 {
+      background: rgb(34, 33, 34);
+      color: wheat;
+    }
+
+    .background2 {
+      background: rgb(170, 103, 15);
+    }
+
+    .background3 {
+      background: rgb(18, 122, 182);
+    }
+
+    div.background1 {
+      display: inline;
+      /* inline */
+      /* 한 줄에 다른 엘리먼트들과 나란히 배치되며 사이즈 조정이 불가 */
+      width: 100px;
+      height: 100px;
+    }
+
+    span.background1 {
+      display: block;
+      /* block */
+      /* 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지하며 사이즈 조정이 가능 */
+      width: 100px;
+      height: 100px;
+    }
+
+    div.background2 {
+      display: inline-block;
+      /* inline-block */
+      /* 내부는 block 외부는 inline */
+      /* 다른 엘리먼트들과 나란히 배치되면서 여러 속정 지정이 가능 */
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>div block</h3>
+  <div class="background1">Lorem Lorem</div>
+  <div class="background2">Lorem Lorem</div>
+  <div class="background3">Lorem Lorem</div>
+
+  <h3>span inline</h3>
+  <span class="background1">hello world</span>
+  <span class="background2">hello world</span>
+  <span class="background3">hello world</span>
+
+</body>
+
+</html>
