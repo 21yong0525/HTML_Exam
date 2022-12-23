@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flex-flow</title>
+  <style>
+    body {
+      margin: 0;
+      width: 150px;
+    }
+
+    .container1 {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .container2 {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .container3 {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border: 0.1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <p>row wrap</p>
+  <div class="container1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+  <p>row nowrap</p>
+  <div class="container2">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+  <p>column nowrap</p>
+  <div class="container3">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+</body>
+
+</html>
