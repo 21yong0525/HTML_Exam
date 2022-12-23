@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flex_align_self</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      background-color: beige;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+    }
+
+    .item1 {
+      background-color: #efef9a;
+      align-self: auto;
+    }
+
+    .item2 {
+      background-color: #c293d8;
+      align-self: baseline;
+    }
+
+    .item3 {
+      background-color: #90caf9;
+      align-self: center;
+    }
+
+    .item4 {
+      background-color: #e790f9;
+      align-self: flex-end;
+    }
+
+    .item5 {
+      background-color: #bf90f9;
+      align-self: flex-start;
+    }
+
+    .item6 {
+      background-color: #f990af;
+      align-self: stretch;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">auto</div>
+    <div class="item item2">baseline</div>
+    <div class="item item3">center</div>
+    <div class="item item4">flex-end</div>
+    <div class="item item5">flex-start</div>
+    <div class="item item6">stretch</div>
+  </div>
+</body>
+
+</html>
