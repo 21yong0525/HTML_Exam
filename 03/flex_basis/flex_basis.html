@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flex_basis</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item1 {
+      background-color: #ef9a9a;
+      flex-basis: 30%;
+      /* flex-basis 와 width를 같이 쓰면 basis가 우선순위 */
+      /* flex-direction이 row 라면 너비, column 이라면 높이로 기본 크기를 설정 */
+      width: 200px;
+    }
+
+    .item2 {
+      background-color: #c293d8;
+      flex-basis: 40%;
+    }
+
+    .item3 {
+      background-color: #90caf9;
+      flex-basis: 20%;
+    }
+
+    .item4 {
+      background-color: #d697c8;
+      flex-basis: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">30%</div>
+    <div class="item item2">40%</div>
+    <div class="item item3">20%</div>
+    <div class="item item4">10%</div>
+  </div>
+</body>
+
+</html>
