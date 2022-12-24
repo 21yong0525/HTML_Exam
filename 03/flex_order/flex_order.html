@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flex_order</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .item1 {
+      background-color: #ef9a9a;
+      /* order를 입력한 순서대로 배치 */
+      order: 2;
+    }
+
+    .item2 {
+      background-color: #c293d8;
+      order: 1;
+    }
+
+    .item3 {
+      background-color: #90caf9;
+      order: 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+  </div>
+</body>
+
+</html>
