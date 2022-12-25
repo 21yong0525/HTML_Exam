@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position_absolute</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: beige;
+    }
+
+    .item {
+      display: flex;
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item1 {
+      background-color: green;
+      /* position: absolute 가장 가까운 조상 요소를 기준으로 배치 */
+      /* 조상 중 static을 제외한 position을 지정한 요소가 없는 경우 body를 기준 */
+      position: absolute;
+      left: 100px;
+      top: 100px;
+    }
+
+    .item1_1 {
+      background-color: green;
+      /* item1이 position을 지정하였기 때문에 item1을 기준으로 배치 */
+      position: absolute;
+      left: 200px;
+    }
+
+    .item2 {
+      background-color: yellow;
+      /* body 기준 */
+      position: absolute;
+      left: 100px;
+    }
+
+    .item3 {
+      background-color: red;
+      /* body 기준 */
+      position: absolute;
+      left: 200px;
+    }
+
+    .item3_1 {
+      background-color: red;
+      /* item3이 position을 지정하였기 때문에 item3을 기준으로 배치 */
+      position: absolute;
+      left: 200px;
+    }
+
+    .dd {
+      background-color: aliceblue;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">1
+      <div class="item item1_1">1_1</div>
+    </div>
+    <div class="item item2">2</div>
+    <div class="item item3">3
+      <div class="item item3_1">3_1</div>
+    </div>
+  </div>
+</body>
+
+</html>
