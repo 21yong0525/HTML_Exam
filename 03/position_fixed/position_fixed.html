@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position_fixed</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: beige;
+    }
+
+    .parent {
+      width: 300px;
+      height: 300px;
+      background-color: violet;
+      position: relative;
+      left: 100px;
+    }
+
+    .item {
+      display: flex;
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item1 {
+      background-color: green;
+      /* parent가 position을 지정하였기 때문에 parent 기준으로 배치 */
+      position: absolute;
+      left: 100px;
+    }
+
+    .item2 {
+      background-color: yellow;
+    }
+
+    .item3 {
+      background-color: red;
+      /* 브라우저 화면 상대 위치 */
+      /* 지정한 위치에 고정되며, 스크롤을 해도 고정 */
+      position: fixed;
+      left: 200px;
+      top: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="parent">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">fixed</div>
+      parent
+    </div>
+  </div>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+  <p>Lorem</p>
+</body>
+
+</html>
