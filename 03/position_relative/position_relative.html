@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position_relative</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: beige;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+    }
+
+    .item:nth-child(1) {
+      background-color: rgb(109, 128, 109);
+      /* position : static 아이템 기본 위치 */
+      position: static;
+    }
+
+    .item:nth-child(2) {
+      background-color: rgb(139, 139, 66);
+      /* position: relative 아이템 기본 위치 (static) 기준으로 배치 */
+      position: relative;
+      left: 100px;
+    }
+
+    .item:nth-child(3) {
+      background-color: rgb(87, 21, 21);
+      position: relative;
+      left: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">static</div>
+    <div class="item">relative left 100</div>
+    <div class="item">relative left 200</div>
+  </div>
+</body>
+
+</html>
