@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>fieldset</title>
+</head>
+
+<body>
+  <form action="input_save.php" method="get">
+    <!-- fieldset : 입력 폼 속에서 그룹을 만들어 경계선을 그린다 -->
+    <fieldset>
+      <!-- legend : 그룹의 설명을 제공 -->
+      <legend>
+        상품정보입력
+      </legend>
+      <p>품명 : <input type="text" name="name"></p>
+      <p>가격 : <input type="text" name="price"></p>
+      <input type="submit" value="save">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
