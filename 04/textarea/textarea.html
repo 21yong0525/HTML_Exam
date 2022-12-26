@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>textarea</title>
+</head>
+
+<body>
+  <p>textarea</p>
+  <form action="input_save.php" method="get">
+    <!-- textarea : 여러 줄의 긴 문장을 자유롭게 입력할 수 있는 양식 -->
+    <!-- cols : 가로 크기 / rows : 세로 크기 -->
+    <textarea name="content" cols="10" rows="3"></textarea>
+    <br>
+    <!-- submit : form 태그 action 속성 지정 파일로 데이터 전달 -->
+    <input type="submit" value="send">
+    <!-- reset : form 태그 입력 데이터 초기화 -->
+    <input type="reset" value="reset">
+  </form>
+</body>
+
+</html>
