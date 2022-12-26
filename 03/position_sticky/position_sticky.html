@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>position_sticky</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: beige;
+    }
+
+    .header1 {
+      /* 가장 가까운 부모 기준으로 배치 */
+      /* 1번째 container에 배치시켜 스크롤이 해당 위치에 도달하면 고정되기 시작 */
+      position: sticky;
+      top: 0;
+      background: black;
+    }
+
+    .header2 {
+      /* 가장 가까운 부모 기준으로 배치 */
+      /* 2번째 container에 배치시켜 스크롤이 해당 위치에 도달하면 고정되기 시작 */
+      position: sticky;
+      top: 0;
+      background: red;
+    }
+
+    .header3 {
+      /* 브라우저 화면 상대 위치 */
+      /* 지정한 위치에 고정되며, 스크롤을 해도 고정 */
+      /* div container 안에 위치 시켰지만 요소 순서를 무시  */
+      position: fixed;
+      top: 200px;
+      background: blue;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      color: white;
+    }
+
+    li {
+      margin: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header1">
+      <ul>
+        <label>sticky</label>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header2">
+      <ul>
+        <label>sticky</label>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header3">
+      <ul>
+        <label>fixed</label>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
