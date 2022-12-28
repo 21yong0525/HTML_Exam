@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>radio</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>
+        <h4>당신은?</h4>
+      </legend>
+      <!-- 서로 관련된 옵션을 나타내는 라디오 버튼 그룹 -->
+      <!-- 하나만 선택 가능 -->
+      <h5>연령대</h5>
+      <input type="radio" name="age" id="10">10 ~ 20대
+      <input type="radio" name="age" id="30">30 ~ 40대
+      <input type="radio" name="age" id="50">50대 이상
+
+      <!-- checked : 초기 체크값 -->
+      <h5>좋아하는 음식</h5>
+      <input type="radio" name="food" id="kr" checked>한식
+      <input type="radio" name="food" id="en">양식
+      <input type="radio" name="food" id="cn">중식
+      <input type="radio" name="food" id="jp">일식
+      <hr>
+      <input type="submit" value="저장">
+      <input type="reset" value="초기화">
+    </fieldset>
+  </form>
+</body>
+
+</html>
