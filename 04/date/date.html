@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>date</title>
+</head>
+
+<body>
+  <form>
+    <!-- 날짜를 입력 받기 위한 양식 value 로 기본값 지정 가능  -->
+    <p>Today : <input type="date" name="today"></p>
+    <!-- min , max : 날짜 선택 최소 최대 값 지정 -->
+    From : <input type="date" name="from" min="2022-12-20" max="2022-12-24">
+    <!-- step : 선택 가능한 값의 간격 -->
+    To : <input type="date" name="to" min="2022-12-25" step="5">
+    <p></p>
+    <input type="submit" value="제출">
+    <input type="reset" value="초기화">
+  </form>
+</body>
+
+
+</html>
