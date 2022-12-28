@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>input_attr</title>
+</head>
+
+<body>
+  <form>
+    <!-- autofocus : 페이지가 로드될 때 자동으로 해당 요소로 포커스 이동 -->
+    <p>autofocus : <input type="text" name="name" size="10" placeholder="입력하세요" autofocus></p>
+    <!-- readonly : 읽기 전용임을 명시 - 값이 서버로 제출됨 -->
+    <p>readonly : <input type="text" name="name" size="10" readonly value="readonly"></p>
+    <!-- disabled : 비활성화됨을 명시 - 값이 서버로 제출되지 않음  -->
+    <p>disabled : <input type="text" name="name" size="10" disabled value="disabled"></p>
+    <!-- autocomplete : on으로 설정시 브라우저는 사용자가 이전 입력값을 드롭다운 옵션으로 보여줌 -->
+    <p>autocomplete : <input type="text" name="name" size="10" autocomplete="on" required></p>
+    <input type="submit" value="저장">
+    <input type="reset" value="초기화">
+  </form>
+
+</body>
+
+</html>
