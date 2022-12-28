@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>checkbox</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <!-- 다중 선택이 가능한 체크 박스 -->
+      <!-- name 을 같은 값으로 지정할 경우 그룹화됨  -->
+      <!-- label : 체크박스 이름 삽입 - for 지정으로 그룹화하면 label 영역을 클릭시 checkbox 영역이 클릭됨 -->
+      <h5>관심있는 주제를 선택하세요</h5>
+      <input type="checkbox" name="lang" id="Java">
+      <label for="Java">Java</label>
+      <br>
+      <input type="checkbox" name="lang" id="Kotlin">
+      <label for="Kotlin">Kotlin</label>
+      <br>
+      <input type="checkbox" name="lang" id="Python">
+      <label for="Python">Python</label>
+      <br>
+      <input type="checkbox" name="lang" id="C++">
+      <label for="C++">C++</label>
+      <hr>
+      <input type="submit" value="저장">
+      <input type="reset" value="초기화">
+    </fieldset>
+  </form>
+</body>
+
+</html>
