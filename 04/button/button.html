@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>button</title>
+  <script src="-" crossorigin="-"></script>
+  <style>
+    i {
+      font-size: 24px;
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>button</legend>
+      <h3>button Tag</h3>
+      <button type="button" onclick="alert('click1')">click1</button>
+      <h3>input button Tag</h3>
+      <!-- accesskey : 단축키 추가 일반적으로 지정한 altkey + accesskey를 같이 눌러 사용 -->
+      <input type="button" onclick="alert('click2')" value="click2" accesskey="s">
+      <h3>image button</h3>
+      <button type="button" onclick="alert('hippo!')">
+        <i class="fa-solid fa-hippo"></i>
+      </button>
+      <button type="button" onclick="alert('otter!')">
+        <i class="fa-solid fa-otter"></i>
+      </button>
+      <button type="button" onclick="alert('kiwi-bird!')">
+        <i class="fa-solid fa-kiwi-bird"></i>
+      </button>
+      <button type="button" onclick="alert('frog!')">
+        <i class="fa-solid fa-frog"></i>
+      </button>
+      <hr>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+</body>
+
+</html>
