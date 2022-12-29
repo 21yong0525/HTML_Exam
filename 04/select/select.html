@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>select</title>
+  <style>
+    form {
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <h5>select</h5>
+      <select name="lang">
+        <!-- 선택 가능한 옵션 메뉴 -->
+        <!-- 선택시 사용할 값으로 value를 지정하며, 지정하지 않은 경우에는 option 안에 텍스트를 값으로 사용 -->
+        <!-- required, disabled, autofocus 등 일반적인 양식 입력 요소 특성 사용가능 -->
+        <!-- selected : 초기 선택 옵션 -->
+        <option value="Java" selected>Java</option>
+        <option value="Kotlin">Kotlin</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+      </select>
+      <hr>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+      <h5>multiple</h5>
+      <!-- multiple : 다중 항목 선택 메뉴 -->
+      <!-- szie : 노출되는 항목의 수 -->
+      <select name="lang" size="6" multiple>
+        <option value="Java">Java</option>
+        <option value="Kotlin">Kotlin</option>
+        <option value="Python">Python</option>
+        <option value="C++">C++</option>
+      </select>
+      <hr>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+      <h5>optgroup</h5>
+      <select name="lang">
+        <!-- optgroup : 드롭다운 내에서 옵션 그룹을 나눈다 -->
+        <optgroup label="optgroup1">
+          <option value="Java">Java</option>
+          <option value="Kotlin">Kotlin</option>
+          <option value="Python">Python</option>
+          <option value="C++">C++</option>
+        </optgroup>
+        <optgroup label="optgroup2">
+          <option value="Java">Java</option>
+          <option value="Kotlin">Kotlin</option>
+          <option value="Python">Python</option>
+          <option value="C++">C++</option>
+        </optgroup>
+        <optgroup label="optgroup3">
+          <option value="Java">Java</option>
+          <option value="Kotlin">Kotlin</option>
+          <option value="Python">Python</option>
+          <option value="C++">C++</option>
+        </optgroup>
+      </select>
+      <hr>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+</body>
+
+</html>
