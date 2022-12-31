@@ -1,0 +1,64 @@
+:root {
+  --back-color: rgb(68, 68, 68);
+  --main-color: rgb(92, 92, 92);
+  --sub-color: rgb(129, 129, 129);
+}
+
+body * {
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+h2, h3 {
+  border: none;
+  margin: 0;
+}
+
+/* main */
+
+main {
+  background-color: var(--back-color);
+  padding: 5px;
+  width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* header, footer */
+
+header, footer {
+  background-color: var(--main-color);
+  height: 80px;
+  line-height: 80px;
+}
+
+/* container */
+
+.container {
+  border: none;
+  height: 500px;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.container * {
+  background-color: var(--sub-color);
+  height: 500px;
+  line-height: 500px;
+}
+
+.container nav {
+  width: 18%;
+  float: left;
+}
+
+.container section {
+  width: 60%;
+  margin-left: 1.8%;
+  float: left;
+}
+
+.container aside {
+  width: 18%;
+  float: right;
+}
