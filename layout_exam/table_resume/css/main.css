@@ -1,0 +1,35 @@
+section {
+  text-align: center;
+  width: 900px;
+  margin: 30px auto;
+}
+
+table {
+  width: 100%;
+}
+
+table, td, th {
+  width: 0 auto;
+  border: 0.5px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: gainsboro;
+}
+
+td, th {
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#school {
+  padding: 0 50px;
+}
