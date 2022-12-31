@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>list</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>datalist</legend>
+      <!-- 사용자가 값을 쉽게 입력 할 수 있도록 추천 목록을 미리 정의한 datalist 요소를 명시 -->
+      <!-- 값을 직접 입력하거나 선택하는 것이 가능 -->
+      <!-- value : 폼데이터로 전달되는 값, 생략시 옵션태그 안에 있는 텍스트로 대체 -->
+      <!-- label : value값 밑에 사용자에게 보여질 값, 생략시 옵션태그 안에 있는 텍스트로 대체  -->
+      <!-- 옵션태그 안에 있는 텍스트가 value와 값이 똑같은 경우 label으로 대체되지 않는다. -->
+      <input type="text" name="lang" list="datalist">
+      <datalist id="datalist">
+        <option label="JAVA">Java</option>
+        <option value="Kotlin">kotlin</option>
+        <option value="Python">python</option>
+        <option value="C++">C++</option>
+      </datalist>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
