@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+</head>
+
+<body>
+  <!-- get -->
+  <!-- URL에 정보가 담겨서 파라미터 형태로 전달 -->
+  <!-- 크기가 제한적이며 URL에 정보가 보이기 때문에 보안성 낮음 -->
+  <form action="server_getdata.php" method="get">
+    <p>이름 : <input type="text" name="name" placeholder="이름을 입력하세요"></p>
+    <p>전화 : <input type="text" name="phone" placeholder="전화번호를 입력하세요"></p>
+    <input type="submit" value="전송">
+    <input type="reset" value="초기화">
+  </form>
+  <hr>
+  <!-- post -->
+  <!-- header - body에 담겨서 전달 -->
+  <!-- 크기에 제한이 없으며, get에 비해 보안성 높음 -->
+  <form action="server_postdata.php" method="post">
+    <p>이름 : <input type="text" name="name" placeholder="이름을 입력하세요"></p>
+    <p>전화 : <input type="text" name="phone" placeholder="전화번호를 입력하세요"></p>
+    <input type="submit" value="전송">
+    <input type="reset" value="다시작성">
+  </form>
+  <hr>
+</body>
+
+</html>
