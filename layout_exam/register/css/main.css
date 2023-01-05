@@ -1,0 +1,74 @@
+:root {
+  /* size */
+  --button-font: 10px;
+  --box-width: 100%;
+  --box-height: 30px;
+  --margin-size: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  text-align: start;
+  margin: var(--margin-size) 0;
+}
+
+/* join */
+
+.register {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+input,
+select {
+  width: var(--box-width);
+  height: var(--box-height);
+  box-sizing: border-box;
+  outline: none;
+  padding: 5px;
+  margin-bottom: var(--margin-size);
+}
+
+.birth {
+  display: flex;
+  justify-content: space-between;
+  width: var(--box-width);
+  padding: 0;
+  height: var(--box-height);
+  margin-bottom: var(--margin-size);
+}
+
+.birth input,
+.birth select {
+  width: 33%;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  width: var(--box-width);
+  padding: 0;
+  height: var(--box-height);
+  margin-bottom: var(--margin-size);
+}
+
+.phone input {
+  width: 68%;
+}
+
+.phone_button {
+  width: 30%;
+  font-size: var(--button-font);
+}
+
+.register_button {
+  width: var(--box-width);
+  height: var(--box-height);
+  font-size: var(--button-font);
+  margin-top: var(--margin-size);
+}

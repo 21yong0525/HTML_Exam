@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>register</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="register">
+    <h3>회원가입</h3>
+    <h6>
+      아이디
+    </h6>
+    <input type="text" name="id" id="id">
+    <h6>
+      비밀번호
+    </h6>
+    <input type="password" name="pass" id="pass">
+    <h6>
+      비밀번호 재확인
+    </h6>
+    <input type="password" name="pass_confirm" id="pass_confirm">
+    <h6>
+      이름
+    </h6>
+    <input type="text" name="name" id="name">
+    <h6>
+      생년월일
+    </h6>
+    <div class="birth">
+      <input type="text" name="birth_year" id="birth_year" placeholder="년(4자)">
+      <select name="birth_month" id="birth_month" title="월 선택">
+        <option hidden>월</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <input type="text" name="birth_day" id="birth_day" placeholder="일">
+    </div>
+    <h6>
+      성별
+    </h6>
+    <select name="gender" id="gender" title="성별">
+      <option hidden>성별</option>
+      <option value="man">남자</option>
+      <option value="woman">여자</option>
+      <option value="none">선택안함</option>
+    </select>
+    <h6>
+      본인 확인 이메일 <span>(선택)</span>
+    </h6>
+    <input type="email" name="email" id="email" placeholder="선택입력">
+    <h6>
+      휴대전화
+    </h6>
+    <select name="phone" id="phone1" title="대한민국 +82">
+      <option value="korea">대한민국 +82</option>
+      <option value="denmark">덴마크 +45 </option>
+      <option value="germany">독일 +49</option>
+      <option value="azerbaijan">아제르바이잔 +994</option>
+    </select>
+    <div class="phone">
+      <input type="text" name="phone" id="phone2" placeholder="전화번호 입력">
+      <button class="phone_button">인증번호 받기</button>
+    </div>
+    <input type="text" name="phone_confirm" id="phone_confirm" placeholder="인증번호 입력하세요">
+    <button class="register_button">가입하기</button>
+  </div>
+</body>
+
+</html>
