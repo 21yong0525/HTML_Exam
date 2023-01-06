@@ -1,0 +1,43 @@
+div {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(51, 153, 119);
+  color: blue;
+  border: 5px dotted black;
+  opacity: 0.5;
+  margin-bottom: 10px;
+  transition: all 2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+/* CSS 의사 클래스: 가상 클래스(pseudo-class)는 선택하고자 하는 HTML 요소의 특별한 '상태(state)'를 명시할 때 사용 */
+
+/* hover : 동적 가상 클래스 - 위에 마우스 커서가 있는 상태 */
+div:hover {
+  width: 500px;
+  height: 20px;
+  background-color: rgb(73, 2, 2);
+  color: rgb(173, 209, 11);
+  border: 10px dotted wheat;
+  opacity: 1;
+}
+
+/* transition : CSS 속성을 변경할 때 애니메이션 속도를 조절 */
+#linear {
+  transition-timing-function: linear;
+}
+
+#ease {
+  transition-timing-function: ease;
+}
+
+#ease-in {
+  transition-timing-function: ease-in;
+}
+
+#ease-out {
+  transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+  transition-timing-function: ease-in-out;
+}
