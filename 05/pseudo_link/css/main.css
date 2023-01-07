@@ -1,0 +1,9 @@
+/* link : 사용자가 연결된 링크를 방문하지 않은 상태 (기본 상태) */
+a:link {
+  color: red;
+}
+
+/* visited : 사용자가 연결된 링크를 방문한 상태 */
+a:visited {
+  color: blue;
+}
