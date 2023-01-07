@@ -1,0 +1,9 @@
+p {
+  color: white;
+  background-color: blue;
+}
+
+/* active : 클릭하고 있는 요소를 선택 */
+p:active {
+  background-color: blueviolet;
+}
