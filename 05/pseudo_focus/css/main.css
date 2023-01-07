@@ -1,0 +1,9 @@
+/* focus : 선택된 동안 스타일 지정 */
+input:focus {
+  background-color: green;
+}
+
+/* checked : 체크시 스타일 지정 */
+input:checked + div {
+  background-color: blue;
+}
