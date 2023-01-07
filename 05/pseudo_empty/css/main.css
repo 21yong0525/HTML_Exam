@@ -1,0 +1,11 @@
+p {
+  color: white;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+}
+
+/* empty : 비어있는 요소에 스타일 지정 */
+p:empty {
+  background-color: blueviolet;
+}
