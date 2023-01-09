@@ -1,0 +1,29 @@
+/* 자식 요소 중 홀수 선택 */
+li:nth-child(odd) {
+  color: tomato;
+}
+
+/* 자식 요소 중 짝수 선택 */
+li:nth-child(even) {
+  color: blueviolet;
+}
+
+/* 첫 번째 자식 요소 */
+li:first-child {
+  color: red;
+}
+
+/* 마지막 자식 요소 */
+li:last-child {
+  color: brown;
+}
+
+/* (n)번째에 위치한 자식 요소 */
+li:nth-child(2) {
+  color: blue;
+}
+
+/* 마지막 요소 에서부터 (n)번째에 위치한 자식 요소 */
+li:nth-last-child(2) {
+  color: green;
+}
